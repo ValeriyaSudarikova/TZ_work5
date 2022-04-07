@@ -1,0 +1,218 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+/* header */
+header {
+    position: relative;
+    min-height: 97px;
+    padding-top: 20px;
+    padding: 20px 10px 5px 60px;
+    background-color: #F8FAFF;
+}
+.header_links {
+    position: absolute;
+    left: 280px;
+    width: 165px;
+}
+.header_arrow {
+    width: 7px;
+    height: 9px;
+}
+.header_link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    color: #656565;
+    text-decoration: none;
+}
+.header_link:hover {
+    color: #6666CC;
+}
+.header_arrow {
+    margin: 5px 8px;
+}
+.header_message {
+    position: absolute;
+    top: 0;
+    right: 265px;
+    width: 65px;
+    height: 65px; 
+    border: 1px solid #6565659a;
+    border-radius: 10px;
+}
+.header_message:hover {
+    border: 1px solid #6666CC;
+}
+.header_message img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.header_message::before {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #E42626;
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    top: 15px;
+    right: 13px;
+}
+.header_account {
+    padding: 7px 29px 7px 10px;
+    position: absolute;
+    right: 70px;
+    width: 256px;
+    height: 66px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    background-color: #fff;
+}
+.header_account a {
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7D7D7D;
+    text-decoration: none;
+}
+.header_account a:hover {
+    color: #6666CC;
+}
+/* menu */
+.menu {
+    padding-top: 106px;
+    padding-left: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 256px;
+    min-height: 786px;
+    background-color: #fff;
+}
+.menu_logo {
+    position: absolute;
+    top: 29px;
+    left: 17px;
+    width: 106px;
+    height: 51px;
+}
+.menu_list {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+.menu_item {
+    position: relative;
+    margin-top: 30px;
+}
+.menu_item:nth-child(1) {
+    margin-top: 26px;
+}
+.menu_item a {
+    display: block;
+    width: 170px;
+    text-decoration: none;
+    color: #7D7D7D;
+}
+.menu_item a:hover {
+    color: #343434;
+}
+.menu_item a:hover::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 49px;
+    left: -47px;
+    top: -12px;
+    background: #6666CC;
+    box-shadow: 0px 2px 10px rgba(102, 102, 204, 0.67);
+}
+.menu_img {
+    display: block;
+    position: absolute;
+    left: -32px;
+    width: 23px;
+    height: 20px;
+}
+.menu_img .active {
+    display: none;
+} 
+.menu_tabs {
+    min-height: 786px;
+    background-color: #F8FAFF;
+}
+.menu_container {
+    margin-left: 280px;
+}
+.menu_container .main {
+    display: none;
+}
+.shop_btn {
+    width: 185px;
+    height: 36px;
+    border-radius: 10px;
+    background: #55C97B;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    transition: 0.4s all;
+}
+.shop_btn:hover {
+    background: #6666CC;
+    color:#fff;
+}
+.shop_header {
+    margin-top: 36px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    color: #343434;
+}
+.shop_list {
+    width: 1000px;
+    height: 219px;
+}
+.shop_item {
+    padding: 26px 31px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7D7D7D;
+}
+.shop_item:nth-child(1) {
+    color: #343434;
+}
+.shop_item-btn {
+    position: relative;
+    margin-top: -5px;
+    width: 149px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    background: #55C97B;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;   
+    color: #fff;
+}
+.shop_item-btn:nth-child(2) {
+    background-color:#B1B1B1;
+}
+.shop_item-btn input {
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}

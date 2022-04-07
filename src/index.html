@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header_links">
+            <a href="#main" class="header_link">Главная</a> 
+            <img class="header_arrow" src="icons/next.svg" alt="переход на страницу">
+            <a href="#main" class="header_link page">Мои магазины</a>
+            </div>
+        <div class="header_account">
+            <a href="#" class="header_message">
+                <img src="icons/account/letter.svg" alt="иконка сообщения">
+            </a>
+            <img src="icons/account/photo.jpg" alt="аватар" class="header_photo">
+            <a href="#" class="header_personal-account">
+                Максим Добжанский
+            </a>
+        </div>
+    </header>
+    <nav class="menu">
+        <img src="icons/logo.jpg" alt="логотип компании" class="menu_logo">
+        <ul class="menu_list">
+            <li class="menu_item">
+                <!-- <img class="menu_img" src="icons/menu/home.svg" alt="домашняя страница">
+                <img class="menu_img unactive" src="icons/menu/home-violet.svg" alt="домашняя страница"> -->
+                <img src="icons/menu/home-violet.svg" alt="домашняя страница" class="menu_img active">
+                <img class="menu_img" src="icons/menu/home.svg" alt="домашняя страница">
+                <a href="#" class="menu_link">Главная</a>
+            </li>
+            <li class="menu_item ">
+                
+                <img class="menu_img active" src="icons/menu/shopping-cart-violet.svg" alt="доступные магазины">
+                <img class="menu_img" src="icons/menu/shopping-cart.svg" alt="доступные магазины">
+                <a href="#" class="menu_link">Мои магазины</a>
+            </li>
+            <li class="menu_item ">
+                <img class="menu_img active" src="icons/menu/megaphone-violet.svg" alt="промо акции">
+                <img class="menu_img" src="icons/menu/megaphone.svg" alt="промо акции">
+                <a href="#" class="menu_link">Промоматериалы</a>
+            </li>
+            <li class="menu_item ">
+                <img class="menu_img active" src="icons/menu/pie-chart-violet.svg" alt="статистика">
+                <img class="menu_img" src="icons/menu/pie-chart.svg" alt="статистика">
+                <a href="#" class="menu_link">Статистика</a>
+            </li>
+            <li class="menu_item">
+                <img class="menu_img active" src="icons/menu/wallet-violet.svg" alt="баланс счета">
+                <img class="menu_img" src="icons/menu/wallet.svg" alt="баланс счета">
+                <a href="#" class="menu_link">Баланс</a>
+            </li>
+            <li class="menu_item">
+                <img class="menu_img active" src="icons/menu/profile-violet.svg" alt="персональные данные">
+                <img class="menu_img" src="icons/menu/profile.svg" alt="персональные данные">
+                <a href="#" class="menu_link">Персональные данные</a>
+            </li>
+            <li class="menu_item">
+                <img class="menu_img active" src="icons/menu/information-violet.svg" alt="часто задаваемые вопросы">
+                <img class="menu_img" src="icons/menu/information.svg" alt="часто задаваемые вопросы">
+                <a href="#" class="menu_link">FAQ</a>
+            </li>
+            <li class="menu_item">
+                <img class="menu_img active" src="icons/menu/support-violet.svg" alt="техподдержка">
+                <img class="menu_img" src="icons/menu/support.svg" alt="техподдержка">
+                <a href="#" class="menu_link">Техподдержка</a>
+            </li>
+            <li class="menu_item ">
+                <img class="menu_img unactive" src="icons/menu/logout-violet.svg" alt="выход">
+                <img class="menu_img" src="icons/menu/logout.svg" alt="выход">
+                <a href="#" class="menu_link">Выход</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="menu_tabs">
+        <div class="menu_container">
+            <div class="menu_content main">
+                <div class=" main header">
+                    Добро пожаловать в <span>Work5</span>!
+                </div>
+            </div>
+            <div class="menu_content shop">
+                <button class="shop_btn">
+                    <img src="icons/+.svg" alt="знак плюс">
+                    Создать свой магазин
+                </button>
+                <h3 class="shop_header">
+                    Управление магазинами
+                </h3>
+                <ul class="shop_list">
+                    <li class="shop_item">
+                        <div class="col-1">№</div>
+                        <div class="col-3">Название</div>
+                        <div class="col-3">Адрес</div>
+                        <div class="col-4">Действие</div>
+                    </li>
+                    <li class="shop_item">
+                        <div class="col-1">12345</div>
+                        <div class="col-3">Дипломная работа</div>
+                        <div class="col-3">http://www.work5.ru/services</div>
+                        <div class="col-4">
+                            <button class="shop_item-btn">
+                                <input id="check" type="checkbox">
+                                <label for="check">
+                                Редактировать
+                                </label>
+                            </button>
+                            <button class="shop_item-btn">
+                                <input id="check_1" type="checkbox">
+                                <label for="check_1">
+                                Редактировать
+                                </label>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="shop_item">
+                        <div class="col-1">12345</div>
+                        <div class="col-3">Дипломная работа</div>
+                        <div class="col-3">http://www.work5.ru/services</div>
+                        <div class="col-4">
+                            <button class="shop_item-btn">
+                                <input id="check_2" type="checkbox">
+                                <label for="check_2">
+                                Редактировать
+                                </label>
+                            </button>
+                            <button class="shop_item-btn">
+                                <input id="check_3" type="checkbox">
+                                <label for="check_3">
+                                Редактировать
+                                </label>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_content"></div>
+            <div class="menu_content"></div>
+            <div class="menu_content"></div>
+            <div class="menu_content"></div>
+            <div class="menu_content"></div>
+            <div class="menu_content"></div>
+            <div class="menu_content"></div>
+        </div>
+    </section>
+</body>
+</html>
