@@ -30,13 +30,49 @@ window.addEventListener('DOMContentLoaded', function() {
           menuImg = document.querySelectorAll('.menu_img'),
           menuImgViolet = document.querySelectorAll('.menu_img-violet');
 
+        
+    function removeClass(item, clas) {
+        item.classList.remove(clas);
+    }
+
+    // function addClass(arr1, item, item2, clas) {
+    //     arr1.forEach(el => removeClass(el, clas));
+    //     item.classList.add(clas);
+    //     item2.classList.remove(clas);
+    // }
+
 
         menuTitle.forEach((item, i) => {
             item.addEventListener('click', () => {
-                menuImg[i].classList.toggle('unactive');
-                menuImgViolet[i].classList.toggle('active');
+                // addClass(menuImgViolet, menuImgViolet[i], menuImg[i], 'active');
+                removeClass(menuImg[i], 'active');
+                menuImgViolet.forEach(elem => elem.classList.remove('active'))
+                menuImg.forEach((el, c) => {
+                    if (c === i) {
+                        el.classList.remove('active');
+                    } else {
+                        el.classList.add('active');
+                    }
+                });
+                menuImgViolet.forEach((el, c) => {
+                    if (c === i) {
+                        el.classList.add('active');
+                    } else {
+                        el.classList.remove('active');
+                    }
+                });
+                // 
             });
         });
+        //         for (let counter = 0; counter <= 8; counter++) {
+        //             if (i != counter) {
+        //                 menuImg[i].classList.add('active');
+        //             } else {
+        //                 menuImg[i].classList.remove('active');
+        //             }
+        //         }
+        //     });
+        // });
 
     //menu navigation 
 
@@ -81,4 +117,32 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     tabs('.menu_item', '.menu_content', '.menu_list', '.menu_item-active');
+
+    //header link 
+
+    const menuHeader = document.querySelectorAll('.menu_item'),
+          headerLinks = document.querySelector('.header_links');
+
+    const link = document.createElement('a');
+
+    const linkContent = [
+        'Главная',
+        'Мои магазины',
+        'Промоматериалы',
+        'Статистика',
+        'Баланс',
+        'Персональные данные',
+        'FAQ',
+        'Техподдержка',
+        'Выход'
+    ]
+
+    link.classList.add('header_link');
+    link.classList.add('page');
+
+    menuHeader.forEach((item, i) => item.addEventListener('click', () => {
+        link.innerHTML = linkContent[i];
+        headerLinks.appendChild(link);
+    }))
+
 });
