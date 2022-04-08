@@ -145,4 +145,24 @@ window.addEventListener('DOMContentLoaded', function() {
         headerLinks.appendChild(link);
     }))
 
+
+    //menu 
+    const hamburger = document.querySelector('.hamburger'),
+          menuSide = document.querySelector('.menu'),
+          menuItems = document.querySelectorAll('.menu_item'),
+          menuClose = document.querySelector('.menu_close');
+
+    function openMenu() {
+        menuSide.style.display = 'block';
+    }
+    function closeMenu() {
+        menuSide.style.display = 'none';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    menuItems.forEach(item => {
+        item.addEventListener('click', closeMenu)
+    })
+
 });

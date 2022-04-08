@@ -9,6 +9,25 @@ header {
     padding: 20px 10px 5px 60px;
     background-color: #F8FAFF;
 }
+.hamburger {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+.hamburger div {
+    height: 2px;
+    width: 15px;
+    background-color: #6666CC;
+    cursor: pointer;
+}
+.hamburger div:nth-child(2) {
+    width: 20px;
+    margin-top: 3px;
+}
+.hamburger div:nth-child(3) {
+    margin-top: 3px;
+}
 .header_links {
     position: absolute;
     left: 280px;
@@ -92,6 +111,14 @@ header {
     min-width: 256px;
     min-height: 786px;
     background-color: #fff;
+}
+.menu_close {
+    display: none;
+    width: 20px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
 }
 .menu_logo {
     position: absolute;
@@ -251,6 +278,9 @@ header {
     left: 10px;
     top: 10px;
 }
+.shop_item-small {
+    display: none;
+}
 /* modal */
 .overlay {
     position: relative;
@@ -393,5 +423,3 @@ header {
 .show {
     display: block;
 }
-
-@import 'media.css';

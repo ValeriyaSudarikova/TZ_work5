@@ -9,9 +9,15 @@
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div class="header_links">
             <a href="#main" class="header_link">Главная</a> 
             <img class="header_arrow" src="icons/next.svg" alt="переход на страницу">
@@ -27,6 +33,7 @@
         </div>
     </header>
     <nav class="menu">
+        <img src="icons/close.svg" alt="знак закрытия меню" class="menu_close">
         <img src="icons/logo.jpg" alt="логотип компании" class="menu_logo">
         <ul class="menu_list">
             <li class="menu_item active">
@@ -42,7 +49,7 @@
             <li class="menu_item ">
                 <img class="menu_img-violet " src="icons/menu/megaphone-violet.svg" alt="промо акции">
                 <img class="menu_img active" src="icons/menu/megaphone.svg" alt="промо акции">
-                Промоматериалы
+               Промоматериалы
             </li>
             <li class="menu_item ">
                 <img class="menu_img-violet " src="icons/menu/pie-chart-violet.svg" alt="статистика">
@@ -72,7 +79,7 @@
             <li class="menu_item ">
                 <img class="menu_img-violet " src="icons/menu/logout-violet.svg" alt="выход">
                 <img class="menu_img active" src="icons/menu/logout.svg" alt="выход">
-                Выход
+                 Выход
             </li>
         </ul>
     </nav>
@@ -92,6 +99,48 @@
                     Управление магазинами
                 </h3>
                 <ul class="shop_list">
+                    <div class="card shop_item-small">
+                        <div class="card-body">
+                          <h5 class="card-title">Дипломная работа</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">12345</h6>
+                          <p class="card-text">http://www.work5.ru/services</p>
+                          <div class="shop_item-btns">
+                            <a href="#" class="card-link shop_item-btn-small">
+                                <input id="check" type="checkbox">
+                                  <label for="check">
+                                  Редактировать
+                                  </label>
+                              </a>
+                            <a href="#" class="card-link shop_item-btn-small">
+                                <input id="check2" type="checkbox">
+                                <label for="check2">
+                                Редактировать
+                                </label>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card shop_item-small">
+                        <div class="card-body">
+                          <h5 class="card-title">Дипломная работа</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">12345</h6>
+                          <p class="card-text">http://www.work5.ru/services</p>
+                          <div class="shop_item-btns">
+                            <a href="#" class="card-link shop_item-btn-small">
+                                <input id="check3" type="checkbox">
+                                  <label for="check3">
+                                  Редактировать
+                                  </label>
+                              </a>
+                            <a href="#" class="card-link shop_item-btn-small">
+                                <input id="check4" type="checkbox">
+                                <label for="check4">
+                                Редактировать
+                                </label>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     <li class="shop_item">
                         <div class="col-1">№</div>
                         <div class="col-3">Название</div>
