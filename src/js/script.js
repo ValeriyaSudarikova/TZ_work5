@@ -161,8 +161,5 @@ window.addEventListener('DOMContentLoaded', function() {
 
     hamburger.addEventListener('click', openMenu);
     menuClose.addEventListener('click', closeMenu);
-    menuItems.forEach(item => {
-        item.addEventListener('click', closeMenu)
-    })
 
 });
